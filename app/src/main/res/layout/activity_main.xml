@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="Boolean selection view"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <me.mutasem.booleanselection.BooleanSelectionView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:endText="여"
+        app:selectedColor="#7C4949"
+        app:startText="남"
+        app:textColor="#FFFFFF"
+        app:unSelectedColor="#BA7979" />
+
+    <me.mutasem.booleanselection.BooleanSelectionView
+        android:id="@+id/old1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:duplicateParentState="false"
+        android:padding="10dp"
+        app:endText="10대"
+        app:selectedColor="#009688"
+        app:startText="10세 미만"
+        app:textColor="#FFFFFF"
+        app:unSelectedColor="#2B534F" />
+
+    <me.mutasem.booleanselection.BooleanSelectionView
+        android:id="@+id/old2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:endText="30대"
+        app:selectedColor="#009688"
+        app:startText="20대"
+        app:textColor="#FFFFFF"
+        app:unSelectedColor="#2B534F" />
+
+    <me.mutasem.booleanselection.BooleanSelectionView
+        android:id="@+id/old3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:endText="50대"
+        app:selectedColor="#009688"
+        app:startText="40대"
+        app:textColor="#FFFFFF"
+        app:unSelectedColor="#2B534F" />
+
+    <me.mutasem.booleanselection.BooleanSelectionView
+        android:id="@+id/old4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:endText="70세 이상"
+        app:selectedColor="#009688"
+        app:startText="60대"
+        app:textColor="#FFFFFF"
+        app:unSelectedColor="#2B534F" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="NEXT" />
+
+</LinearLayout>
